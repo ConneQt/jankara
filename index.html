@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>ジャンカラ | 売り上げ表</title>
+  <meta name="description" content="PAS-POL">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper">
+      <div class="header-title">
+        <img src="img/lg_jk_h.png">
+        <h1 class="title">売り上げ表記入ツール</h1>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="wrapper">
+      <div class="main-title">
+        <h2>売り上げ表を簡単にするためのツール【B勤】</h2>
+        <p>以下に適切な数値を入力してください</p>
+      </div>
+      <div class="main-text">
+
+        <div class="blocks">
+          <div class="uriage block">
+            <h3>【売り上げ】</h3>
+            <p>18時の売り上げ : <input type="tel" class="tel" id="sale-18"></p>
+            <p>23時の売り上げ : <input type="tel" class="tel" id="sale-23"></p>
+          </div>
+
+          <div class="kyaku block">
+            <h3>【客数】</h3>
+            <p>18時の客数 : <input type="tel" class="tel" id="kyaku-18"></p>
+            <p>23時の客数 : <input type="tel" class="tel" id="kyaku-23"></p>
+          </div>
+
+          <div class="food-drink block">
+            <h3>【フード・ドリンク】</h3>
+            <p>18時のフード : <input type="tel" class="tel" id="food-18"></p>
+            <p>18時のドリンク : <input type="tel" class="tel" id="drink-18"></p>
+            <p>23時のフード : <input type="tel" class="tel" id="food-23"></p>
+            <p>23時のドリンク : <input type="tel" class="tel" id="drink-23"></p>
+          </div>
+
+          <div class="karappa block">
+            <h3>【からっぱ売り上げ】</h3>
+            <p>18時のからっぱ : <input type="tel" class="tel" id="karappa-18"></p>
+            <p>23時のからっぱ : <input type="tel" class="tel" id="karappa-23"></p>
+          </div>
+        </div>
+
+        <div class="button">
+          <p>送信</p>
+        </div>
+
+        <div class="answer">
+          <p class="answer-uriage">売り上げ : </p>
+          <p class="answer-kyaku">客数 : </p>
+          <p class="answer-kyaku-tanka">客単価 : </p>
+          <p class="answer-insyoku">飲食単価 : </p>
+          <p class="answer-karappa">からっぱ売り上げ : </p>
+          <p class="answer-karappa-tanka">からっぱ比率 : </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- scriptタグを用いて、script.jsを読み込んでください -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
