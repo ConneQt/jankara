@@ -1,11 +1,9 @@
 .main {
-  /* height: 1000px; */
   background: url(bg_member.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   padding: 50px 0;
-  /* text-align: center; */
 }
 
 .wrapper {
@@ -85,4 +83,22 @@ header {
 .answer {
   font-size: 18px;
   color: #333;
+}
+
+/* モバイル版
+----------------------------------------------------------------------- */
+@media (max-width: 600px) {
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+header h1 {
+  color: #e40012;
+  font-size: 10px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
 }
